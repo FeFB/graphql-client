@@ -1,6 +1,6 @@
 {
   "name": "graphql-client-rxjs",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Simple GraphQL Client using fetch and rxjs.",
   "main": "index.js",
   "scripts": {
