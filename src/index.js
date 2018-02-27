@@ -1,5 +1,4 @@
 const { Observable } = require("rxjs");
-
 const fetch = require("node-fetch");
 
 class GraphQLClient {
