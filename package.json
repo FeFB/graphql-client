@@ -1,21 +1,22 @@
 {
-  "name": "graphql-client",
-  "version": "0.0.1",
+  "name": "graphql-client-rxjs",
+  "version": "0.0.3",
   "description": "Simple GraphQL Client using fetch and rxjs.",
   "main": "index.js",
   "scripts": {
+    "deploy": "npm version patch -m 'Bump %s' && git push origin master && npm publish",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FeFB/graphql-client.git"
+    "url": "git+https://github.com/FeFB/graphql-client-rxjs.git"
   },
   "author": "Felipe Berton",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FeFB/graphql-client/issues"
+    "url": "https://github.com/FeFB/graphql-client-rxjs/issues"
   },
-  "homepage": "https://github.com/FeFB/graphql-client#readme",
+  "homepage": "https://github.com/FeFB/graphql-client-rxjs#readme",
   "dependencies": {
     "node-fetch": "^2.0.0",
     "rxjs": "^5.5.6"
