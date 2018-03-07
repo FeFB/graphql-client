@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/FeFB/graphql-client-rxjs#readme",
   "dependencies": {
+    "graphql-obj2arg": "^0.1.0",
     "node-fetch": "^2.0.0",
     "rxjs": "^5.5.6"
   }

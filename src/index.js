@@ -1,4 +1,5 @@
 const { Observable } = require("rxjs");
+const Util = require("./Util");
 const fetch = require("node-fetch");
 
 class GraphQLClient {
@@ -48,6 +49,33 @@ class GraphQLClient {
       }
       return body;
     });
+  }
+
+  get(queryName, params = "", fields) {
+    const paramsString = Util.paramsToString(params);
+    console.log(paramsString);
+
+    const source = `query {
+      ${queryName} (${paramsString}) {
+        ${fields}
+      }
+    }`;
+    return this.query(source);
+  }
+
+  set(queryName, params = "", fields) {
+    const paramsString = Util.paramsToString(params);
+    console.log(paramsString);
+
+    const source = `mutation {
+      ${queryName} (${paramsString}) {
+        ${fields}
+      }
+    }`;
+
+    console.log("=========");
+    console.log(source);
+    return this.mutation(source);
   }
 }
 
